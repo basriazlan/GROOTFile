@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word of the day</title>
+    <link rel="stylesheet" type="text/css" href="crud.css">
+</head>
+<body>
+    <header class="navbar">
+        <h2 class="logo"><a href="#">Learner's Dictionaries</a></h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dict.html">Dictionary</a></li>
+                <li><a href="thesa.html">Thesaurus</a></li>
+                <li><a href="crud.html">Words Of The Day</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <div class="container">
+                <div class="form-group">
+                    <label>File name</label>
+                    <input id="fileName" type="text" class="form-control" value="WordOfTheDay.txt" disabled>
+                </div>
+
+                <br><br>
+
+                <div class="form-group">
+                    <label for="fileContents">Content</label>
+                    <textarea id="fileContents" class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+        </form>
+                <br>
+                <button id="btnRead" class="btn btn-default">Read</button>
+                <button id="btnUpdate" class="btn btn-default">Update</button>
+
+        <table id="fileTable">
+            <thead>
+                <tr>
+                    <th>Words Of The Day</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="fileTableBody"></tbody>
+        </table>
+          
+    </main>
+
+
+
+    <script src="crud.js"></script>
+</body>
+</html>

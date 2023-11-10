@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thesaurus</title>
+    <link rel="stylesheet" type="text/css" href="thesa.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <h2 class="logo"><a href="#">Learner's Dictionaries</a></h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dict.html">Dictionary</a></li>
+                    <li><a href="thesa.html">Thesaurus</a></li>
+                    <li><a href="crud.html">Words Of The Day</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="container">
+        <br>
+        <div class="search-bar">
+            <br><br>
+            <center>
+            <div class="search-container">
+                <input type="text" id="searchData" placeholder="Enter a word">
+                <div class="button" onclick="searchThesaurus()">Search</div>
+            </div>
+            </center>
+            <!-- WORD -->
+            <div id="wordContainer" style="display: none">
+                <h2>Word:</h2>
+                <p id="word"></p>
+            </div>
+
+            <!-- SYNONYM NOUN -->
+            <div id="synonymNounContainer" style="display: none">
+                <h2>Part of Speech: Noun </h2>
+                <h3>Synonyms: </h3>
+                <ul id="synonymNounList"></ul>
+            </div>
+
+            <!-- ANTONYM NOUN-->
+            <div id="antonymNounContainer" style="display: none">
+                <h3>Antonyms:</h3>
+                <ul id="antonymNounList"></ul>
+            </div>    
+
+            <br><br>
+
+            <!-- SYNONYM VERB -->
+            <div id="synonymVerbContainer" style="display: none">
+                <h2>Part of Speech: Verb </h2>
+                <h3>Synonyms: </h3>
+                <ul id="synonymVerbList"></ul>
+            </div>
+
+            <!-- ANTONYM VERB-->
+            <div id="antonymVerbContainer" style="display: none">
+                <h3>Antonyms:</h3>
+                <ul id="antonymVerbList"></ul>
+            </div>
+            
+            <br><br>
+       
+            <!-- SYNONYM ADJECTIVE-->
+            <div id="synonymAdjectiveContainer" style="display: none">
+                <h2>Part of Speech: Adjective </h2>
+                <h3>Synonyms: </h3>
+                <ul id="synonymAdjectiveList"></ul>
+            </div>
+
+            <!-- ANTONYM ADJECTIVE-->
+            <div id="antonymAdjectiveContainer" style="display: none">
+                <h3>Antonyms:</h3>
+                <ul id="antonymAdjectiveList"></ul>
+            </div>
+
+            <br><br>
+
+            <!-- SYNONYM ADVERB -->
+            <div id="synonymAdverbContainer" style="display: none">
+                <h2>Part of Speech: Adverb</h2>
+                <h3>Synonyms:</h3>
+                <ul id="synonymAdverbList"></ul>
+            </div>
+
+            <!-- ANTONYM ADVERB -->
+            <div id="antonymAdverbContainer" style="display: none">
+                <h3>Antonyms:</h3>
+                <ul id="antonymAdverbList"></ul>
+            </div>
+
+            <br><br>
+
+            <div id="addToWordOfDayContainer" style="display: none">
+                <button onclick="navigateToCRUDPage()">Add to Words of the Day</button>
+            </div>
+
+            <br><br>
+
+            <div id="error" style="display: none">
+                <p id="errorMessage"></p>
+            </div>
+        </div>
+        </div>
+</main>
+    <script src="thesa.js"></script>
+</body>
+</html>

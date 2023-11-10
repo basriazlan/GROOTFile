@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Apply a background color to the body */
+body {
+    background-image: url('background dict.jpg');
+}
+/* Style the header and navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the logo position */
+.logo {
+    position: relative;
+    top: -12px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
+.welcome-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Style the homepage content */
+.homepage .content {
+    display: flex;
+    height: 85%;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homepage .content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.homepage .content .text {
+    margin-bottom: 50px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(38, 36, 36, 0.3);
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 768px) {
+    .homepage .content h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .homepage .content .text {
+        font-size: 17px;
+    }
+}
+
+/* Style the "Get Started" button */
+a {
+    text-decoration: none;
+}
+
+a.get-started-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a.get-started-button:hover {
+    background-color: #555;
+}
+
+/* Additional adjustments for smaller screens */
+@media (max-width: 768px) {
+    a.get-started-button {
+        padding: 10px 20px;
+    }
+}

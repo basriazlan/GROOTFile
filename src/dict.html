@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+    <link rel="stylesheet" type="text/css" href="dict.css">
+</head>
+<body>
+    <header class="navbar">
+        <h2 class="logo"><a href="#">Learner's Dictionaries</a></h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#dict.html">Dictionary</a></li>
+                    <li><a href="thesa.html">Thesaurus</a></li>
+                    <li><a href="crud.html">Words Of The Day</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="container">
+        <br>
+        <div class="search-bar">
+            <br><br>      
+            <center>
+            <div class="search-container">
+                <input type="text" id="searchData" placeholder="Enter a word">
+                <div class="button" onclick="buttonClicked()">Search</div>
+            </div>
+            </center>
+            <!-- WORD -->
+            <div id="wordContainer" style="display: none">
+                <h2>Word:</h2>
+                <p id="word"></p>
+            </div>
+
+            <!-- PHONETIC -->
+            <div id="phoneticContainer" style="display: none">
+                <h2>Phonetic Information:</h2>
+                <p id="phoneticText"></p>
+            </div>
+
+            <!-- Audio -->
+            <div id="audioContainer" style="display: none">
+                <h2>Audio Pronunciation:</h2>
+                <audio controls id="audio"></audio>
+            </div>
+
+            <!-- Source URL -->
+            <div id="sourceUrlContainer" style="display: none">
+                <h2>Source URL:</h2>
+                <p><a id="sourceUrl" target="_blank"></a></p>
+            </div>
+
+            <!-- DEFINITION -->
+            <div id="dictionaryMeaning" style="display: none">
+                <h2>Definitions:</h2>
+                <ul id="dictionaryDefinitions"></ul>
+            </div>
+
+            <!-- PART OF SPEECH VERB -->
+            <div id="verbContainer" style="display: none;">
+                <h2>Part of Speech: Verb</h2>
+                <div id="verbDefinitions"></div>
+            </div>
+
+            <!-- PART OF SPEECH NOUN -->
+            <div id="nounContainer" style="display: none;">
+                <h2>Part of Speech: Noun</h2>
+                <div id="nounDefinitions"></div>
+            </div>
+
+            <!-- PART OF SPEECH ADJECTIVE -->
+            <div id="adjectiveContainer" style="display: none;">
+                <h2>Part of Speech: Adjective</h2>
+                <div id="adjectiveDefinitions"></div>
+            </div>
+
+            <br><br>
+
+            <div id="addToWordOfDayContainer" style="display: none">
+                <button onclick="navigateToCRUDPage()">Add to Words of the Day</button>
+            </div>
+
+        <br><br>
+
+            <div id="error" style="display: none">
+                <p id="errorMessage" class="app-error"></p>
+            </div>        
+        </div>
+        </div>
+</main>
+    <script src="dict.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dictionary Online</title>
+    <link rel="stylesheet" type="text/css" href="wotd.css">
+</head>
+<body>
+    <header class="navbar">
+        <h2 class="logo"><a href="#">Learner's Dictionaries</a></h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dict.html">Dictionary</a></li>
+                <li><a href="thesa.html">Thesaurus</a></li>
+                <li><a href="crud.html">Words Of The Day</a></li>
+            </ul>
+        </nav>
+</header>
+
+<main>
+ 
+
+  <form>
+    <div class="container">
+      <div class="form-group">
+        <label>File name</label>
+        <input id="fileName" type="text" class="form-control" value="WordofTheDay.txt" disabled>
+    </div>
+      <br>
+      <div class="form-group">
+        <label>Content</label>
+        <textarea id="fileContents" class="form-control"rows="5"></textarea>
+      </div>
+    </form>
+    <br><br>
+    <button id="btnCreate" class="btn btn-default">Create</button> <button id="view"> <a href="crud.html" style="text-decoration: none; color:white;">view</a></button>
+  </div>
+
+  </div>
+</main>
+
+  <!--JS-->
+  <script src="wotd.js">
+    </script>
+</body>
+</html>
